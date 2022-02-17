@@ -14,7 +14,7 @@
 
 </head>
 <header style="font-family: 'Redressed', cursive;">
-    <h1 style="font-size: 70px;"; class="text-center mt-5 text-info pb-5 fw-bold">Money Master <span style="color: #F7D000;"><i class="fa-solid fa-hand-holding-dollar"></i></span></h1>
+    <h1 style="font-size: 70px;"; class="text-center mt-5 text-info pb-5 fw-bold">Mridul's Bank <span style="color: #F7D000;"><i class="fa-solid fa-hand-holding-dollar"></i></span></h1>
 </header> 
 <body>
     <main>
@@ -27,13 +27,13 @@
                     <div class="all_texts">
                         <div class="income_input py-3">
                             <h2 class="text-center">Income</h2>
-                            <h4 class="d-inline m-4">Income :</h4><input type="number" name="" id="">
+                            <h4 class="d-inline m-4">Income :</h4><input type="number" name="" id="Income_total_input">
                         </div>
                         <div class="expenses_input py-3">
                             <h2 class="text-center">Expenses</h2>
-                            <div class="food_input py-1"> <h4 class="d-inline m-4">Food :</h4> <input type="number" name="" id=""></div>
-                            <div class="rent_input py-1"><h4 class="d-inline m-4">Rent : </h4><input type="number" name="" id=""></div>
-                            <div class="clocth_input py-1"><h4 class="d-inline m-4">Clocth:</h4><input type="number" name="" id=""></div>
+                            <div class="food_input py-1"> <h4 class="d-inline m-4">Food :</h4> <input type="number" name="" id="Food_cost_input"></div>
+                            <div class="rent_input py-1"><h4 class="d-inline m-4">Rent : </h4><input type="number" name="" id="Rent_cost_input"></div>
+                            <div class="clothes_input py-1 "><h4 class="d-inline m-4">Clothes:</h4><input type="number" name="" id="Clothes_cost_input"></div>
                         </div>
                         <button class=" calculate_Button btn btn-info rounded text-white mb-3">Calculate</button>
                         <div class="Total_and_corrent_Balance">
@@ -41,7 +41,7 @@
                             <h2 class="py-3">Balance : $ <span class="fw-bold">00</span></h2>
                         </div>
                         <div class="savings align-items-center ">
-                            <h4 class="d-inline-block">Save:</h4> <input class="w-25" type="number" name="" id=""> <h4 class="d-inline-block fw-bold"> %   </h4>  <button class=" calculate_Button btn btn-info rounded text-white mb-3 mt-2">Calculate</button>
+                            <h4 class="d-inline-block">Save:</h4> <input class="w-25" type="number" name="Savings_persentage_input" id=""> <h4 class="d-inline-block fw-bold"> %   </h4>  <button id="calculate_Button" class=" btn btn-info rounded text-white mb-3 mt-2">Calculate</button>
                         </div>
                         <div class="savings_and_balance py-3">
                             <h3>savings ammount : $ <span class="fw-bold">00</span></h3>
@@ -53,5 +53,9 @@
         </div>
     </main>
 
+
+
+
+    <script src="js/file.js"></script>
 </body>
 </html>
