@@ -21,3 +21,26 @@
      TotalExpensesMoney.innerText= TotalExpenses;
 }
  })
+
+ //bunas section ?????????????????????????????????????????????????????
+
+ const RemainingBalanceTotal=document.getElementById("remaining_balance_text");
+ const SavingsAmmountText=document.getElementById("savings_ammount_text");
+ const CalculatePersentButton=document.getElementById("Calculate_persent_Button")
+ const SaveMoney = document.getElementById("Savings_By_percentage");
+ const SaveMoneyText=SaveMoney.value;
+ const SaveMoneyNumber=parseFloat(SaveMoneyText);
+
+ CalculatePersentButton.addEventListener("click",function(){
+     let IncomeTotalInput = parseFloat(IncomeTotalInputField.value);
+     let SaveMoneyField = parseFloat(SaveMoney.value);
+     let savingCalculation = (IncomeTotalInput*SaveMoneyField)/100;
+     SavingsAmmountText.innerText=savingCalculation;
+
+      //remaining Balance.............
+      
+     const TotalMoney= document.getElementById("Balance_text_info");
+     let totalMoneyAmmount = parseFloat(TotalMoney.innerText);
+     RemainingBalanceTotal.innerText=totalMoneyAmmount-savingCalculation;
+     
+ })
