@@ -11,6 +11,13 @@
 
  //Error Handaler.........................
  CalculateAllButton.addEventListener("click",function(){
-     if ((IncomeTotalInputField.value<0 || FoodCostInputField.value<0 || RentCostInputField.value<0 || ClothesCostInputField.value <0) ||(IncomeTotalInputField.value==="" || FoodCostInputField.value===""|| RentCostInputField.value===""|| ClothesCostInputField.value===""))
-     alert("please...... inter a valid Number")
+     if((IncomeTotalInputField.value<0 || FoodCostInputField.value<0 || RentCostInputField.value<0 || ClothesCostInputField.value <0) ||(IncomeTotalInputField.value==="" || FoodCostInputField.value===""|| RentCostInputField.value===""|| ClothesCostInputField.value==="")){
+        alert("please...... inter a valid Number")
+}    else{
+    const TotalMoney= document.getElementById("Balance_text_info");
+    const TotalExpensesMoney = document.getElementById("Total_expenses_Text");
+        let TotalExpenses = parseFloat(FoodCostInputField.value)+ parseFloat(RentCostInputField.value)+parseFloat(ClothesCostInputField.value);
+     TotalMoney.innerText= parseFloat(IncomeTotalInputField.value)-TotalExpenses;
+     TotalExpensesMoney.innerText= TotalExpenses;
+}
  })
